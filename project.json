@@ -1,0 +1,8 @@
+{
+  "slug": "event-deduplicator",
+  "title": "TTL event deduplicator",
+  "description": "Reject repeated event IDs within a bounded first-seen retention window.",
+  "category": "systems",
+  "demo_args": [],
+  "expected_exit": 0
+}
