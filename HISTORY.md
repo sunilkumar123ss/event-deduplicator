@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 3 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 4 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -15,7 +15,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 1 | 2023-04-26T17:51:29+05:30 | add repository metadata and Python ignore rules (present) |
 | 2 | 2023-05-29T14:45:47+05:30 | add module imports, constants, and scope documentation (present) |
 | 3 | 2023-07-03T09:47:00+05:30 | retain first-seen evidence and reject duplicate event IDs (present) |
-| 4 | 2023-11-08T11:57:02+05:30 | add the deterministic demonstration and command-line entry point (later stage) |
+| 4 | 2023-11-08T11:57:02+05:30 | add the deterministic demonstration and command-line entry point (present) |
 | 5 | 2024-03-24T11:59:33+05:30 | test first and duplicate (later stage) |
 | 6 | 2024-04-26T10:03:18+05:30 | test duplicate does not extend window (later stage) |
 | 7 | 2024-08-14T15:46:14+05:30 | test capacity does not evict evidence (later stage) |

@@ -30,3 +30,10 @@ class Deduplicator:
             raise OverflowError('Deduplication window is full')
         self.entries[event_id] = now + self.ttl
         return True
+
+def demo():
+    d = Deduplicator(ttl=5)
+    return {'events': [{'id': key, 'at': at, 'accepted': d.accept(key, at)} for (key, at) in [('a', 0), ('a', 1), ('b', 2), ('a', 5)]]}
+if __name__ == '__main__':
+    argparse.ArgumentParser(description=__doc__).parse_args()
+    print(json.dumps(demo(), indent=2))
