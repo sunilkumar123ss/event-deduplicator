@@ -14,6 +14,11 @@ class DedupTests(unittest.TestCase):
         self.assertTrue(d.accept('a', 0))
         self.assertFalse(d.accept('a', 1))
 
+    def test_duplicate_does_not_extend_window(self):
+        d = m.Deduplicator(ttl=5)
+        d.accept('a', 0)
+        d.accept('a', 4)
+        self.assertTrue(d.accept('a', 5))
 
 
 
