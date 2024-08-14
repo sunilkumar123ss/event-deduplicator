@@ -20,6 +20,12 @@ class DedupTests(unittest.TestCase):
         d.accept('a', 4)
         self.assertTrue(d.accept('a', 5))
 
+    def test_capacity_does_not_evict_evidence(self):
+        d = m.Deduplicator(capacity=1)
+        d.accept('a', 0)
+        with self.assertRaises(OverflowError):
+            d.accept('b', 1)
+        self.assertFalse(d.accept('a', 1))
 
 
 
