@@ -27,6 +27,11 @@ class DedupTests(unittest.TestCase):
             d.accept('b', 1)
         self.assertFalse(d.accept('a', 1))
 
+    def test_expiration_reclaims_capacity(self):
+        d = m.Deduplicator(ttl=2, capacity=1)
+        d.accept('a', 0)
+        self.assertTrue(d.accept('b', 2))
+        self.assertEqual(list(d.entries), ['b'])
 
 
 if __name__ == '__main__':
