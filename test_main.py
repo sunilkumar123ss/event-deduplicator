@@ -33,6 +33,11 @@ class DedupTests(unittest.TestCase):
         self.assertTrue(d.accept('b', 2))
         self.assertEqual(list(d.entries), ['b'])
 
+    def test_clock_reversal_rejected(self):
+        d = m.Deduplicator()
+        d.accept('a', 5)
+        with self.assertRaises(ValueError):
+            d.accept('b', 4)
 
 if __name__ == '__main__':
     unittest.main()

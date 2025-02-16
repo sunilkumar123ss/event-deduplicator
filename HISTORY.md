@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 8 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 9 of 13. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -20,7 +20,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 6 | 2024-04-26T10:03:18+05:30 | test duplicate does not extend window (present) |
 | 7 | 2024-08-14T15:46:14+05:30 | test capacity does not evict evidence (present) |
 | 8 | 2024-08-24T12:29:17+05:30 | test expiration reclaims capacity (present) |
-| 9 | 2025-02-16T10:11:19+05:30 | test clock reversal rejected (later stage) |
+| 9 | 2025-02-16T10:11:19+05:30 | test clock reversal rejected (present) |
 | 10 | 2025-05-24T13:20:53+05:30 | test invalid contract (later stage) |
 | 11 | 2025-12-20T15:44:37+05:30 | add isolated tests, demo, and help verification (later stage) |
 | 12 | 2026-05-05T16:14:06+05:30 | add the hosted Python verification workflow (later stage) |
