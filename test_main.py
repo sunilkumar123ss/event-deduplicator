@@ -39,5 +39,11 @@ class DedupTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             d.accept('b', 4)
 
+    def test_invalid_contract(self):
+        for args in [{'ttl': 0}, {'capacity': True}, {'ttl': float('inf')}]:
+            with self.assertRaises(ValueError):
+                m.Deduplicator(**args)
+        with self.assertRaises(ValueError):
+            m.Deduplicator().accept('', 0)
 if __name__ == '__main__':
     unittest.main()
